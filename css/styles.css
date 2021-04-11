@@ -1,0 +1,174 @@
+/* CSS-переменные */
+:root {
+  --main-text-cl: #757575;
+  --title-cl: #212121;
+  --accent-cl: #2196f3;
+  --alt-text-cl: #000000;
+  --alt-title-cl: #ffffff;
+
+  --dark-bg: #2f303a;
+  --second-bg: #f5f4fa;
+
+  --main-font: "Roboto", sans-serif;
+  --title-font: "Raleway", sans-serif;
+}
+
+/* Основные стили */
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+}
+
+/* стили логотипа */
+.logo {
+  font-family: var(--title-font);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-cl);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.logo-footer {
+  font-family: var(--title-font);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-cl);
+  text-decoration: none;
+}
+.logo-icon {
+  color: var(--alt-text-cl);
+}
+.logo-footer-icon {
+  color: var(--alt-title-cl);
+}
+/* для скрытого заголовка */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/* Стили ссылок */
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+/* применяем чёрный цвет для ссылок в навигации */
+nav > ul {
+  color: var(--alt-text-cl);
+}
+/* убирает маркеры элементов списка */
+.list {
+  list-style: none;
+}
+
+/* убирает настройки стиля браузера для тега address  */
+.address {
+  font-style: inherit;
+}
+
+/* стили для кнопки */
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--alt-title-cl);
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn-portfolio {
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-cl);
+  background-color: var(--second-bg);
+  border-radius: 4px;
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: var(--alt-title-cl);
+  background-color: var(--accent-cl);
+}
+button {
+  cursor: pointer;
+}
+.title {
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--alt-title-cl);
+  background-color: var(--dark-bg);
+}
+
+/* стили для h2 */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-cl);
+}
+
+/* стили для подзаголовка */
+.section-advantages-title {
+  line-height: 1.14;
+  color: var(--title-cl);
+  text-transform: uppercase;
+}
+
+/* стили для секции "Наша команда" */
+.team-item {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-item-name {
+  color: var(--title-cl);
+}
+
+.team-bg {
+  background-color: var(--second-bg);
+}
+/* стили для футера */
+address > p {
+  color: var(--alt-title-cl);
+}
+address > ul {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark-bg {
+  background-color: var(--dark-bg);
+}
+
+/* стили для секции "Проекты" */
+.project-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-cl);
+}
+.project-item {
+  font-size: 16px;
+  line-height: 1.87;
+}
