@@ -111,6 +111,8 @@ nav > ul {
 button {
   cursor: pointer;
 }
+
+/* стили для h1 */
 .title {
   font-size: 44px;
   line-height: 1.36;
