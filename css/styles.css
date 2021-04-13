@@ -61,9 +61,7 @@ body {
   color: inherit;
   text-decoration: none;
 }
-.active-color {
-  color: var(--accent-cl);
-}
+
 .title-color {
   color: var(--title-cl);
 }
@@ -74,6 +72,9 @@ body {
 .nav-list {
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.active-color {
+  color: var(--accent-cl);
 }
 /* убирает маркеры элементов списка */
 .list {
