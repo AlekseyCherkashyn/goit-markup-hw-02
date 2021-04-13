@@ -5,6 +5,7 @@
   --accent-cl: #2196f3;
   --alt-text-cl: #000000;
   --alt-title-cl: #ffffff;
+  --alt-title-cl-transp: rgba(255, 255, 255, 0.6);
 
   --dark-bg: #2f303a;
   --second-bg: #f5f4fa;
@@ -60,15 +61,19 @@ body {
   color: inherit;
   text-decoration: none;
 }
-
+.active-color {
+  color: var(--accent-cl);
+}
+.title-color {
+  color: var(--title-cl);
+}
 .link:hover,
 .link:focus {
   color: var(--accent-cl);
 }
-
-/* применяем чёрный цвет для ссылок в навигации */
-nav > ul {
-  color: var(--alt-text-cl);
+.nav-list {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 /* убирает маркеры элементов списка */
 .list {
@@ -78,9 +83,16 @@ nav > ul {
 /* убирает настройки стиля браузера для тега address  */
 .address {
   font-style: inherit;
+  color: var(--alt-title-cl);
+}
+.white-cl-tr {
+  color: var(--alt-title-cl-transp);
 }
 
 /* стили для кнопки */
+button {
+  cursor: pointer;
+}
 .btn {
   font-weight: bold;
   font-size: 16px;
@@ -96,6 +108,7 @@ nav > ul {
 }
 
 .btn-portfolio {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -108,12 +121,13 @@ nav > ul {
   color: var(--alt-title-cl);
   background-color: var(--accent-cl);
 }
-button {
-  cursor: pointer;
+.btn-portfolio:active {
+  color: var(--alt-title-cl);
+  background-color: var(--accent-cl);
 }
-
 /* стили для h1 */
 .title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -133,6 +147,7 @@ button {
 
 /* стили для подзаголовка */
 .section-advantages-title {
+  font-size: 14px;
   line-height: 1.14;
   color: var(--title-cl);
   text-transform: uppercase;
@@ -146,19 +161,14 @@ button {
 }
 
 .team-item-name {
+  font-size: 16px;
   color: var(--title-cl);
 }
 
 .team-bg {
   background-color: var(--second-bg);
 }
-/* стили для футера */
-address > p {
-  color: var(--alt-title-cl);
-}
-address > ul {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .dark-bg {
   background-color: var(--dark-bg);
 }
